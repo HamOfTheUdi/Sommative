@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero_immatriculation: MyString
+  couleur: MyString
+  statut: MyString
+  annee: 1
+  marque: MyString
+  garage: one
+  proprietaires: one
+
+two:
+  numero_immatriculation: MyString
+  couleur: MyString
+  statut: MyString
+  annee: 1
+  marque: MyString
+  garage: two
+  proprietaires: two

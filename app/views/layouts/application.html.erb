@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GarageManager</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>GarageManager</h1>
+        <nav>
+          <%= link_to 'Accueil', root_path %> |
+          <%= link_to 'Voitures', voitures_path %> |
+          <%= link_to 'Services', services_path %> |
+          <%= link_to 'Employés', employes_path %> |
+          <%= link_to 'Garages', garages_path %> |
+          <%= link_to 'Propriétaires', proprietaires_path %> |
+          <%= link_to 'Pièces', parts_path %>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
+
+
+
